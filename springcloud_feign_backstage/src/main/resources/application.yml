@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+server:
+  port: 8084
+spring:
+  application:
+    name: service-feign-backstage
+  thymeleaf:
+    mode: HTML5
+    cache: false
+    servlet:
+      content-type: text/html
+    encoding: UTF-8
+
+
+feign:
+  hystrix:
+    enabled: true

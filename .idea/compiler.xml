@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud_api" />
+        <module name="springcloud_config-client" />
+        <module name="springcloud_config-server" />
+        <module name="springcloud_eureka" />
+        <module name="springcloud_feign" />
+        <module name="springcloud_feign_backstage" />
+        <module name="springcloud_feign_business" />
+        <module name="springcloud_producer" />
+        <module name="springcloud_zuul" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springcloud_config-client" options="-parameters" />
+      <module name="springcloud_config-server" options="-parameters" />
+      <module name="springcloud_eureka" options="-parameters" />
+      <module name="springcloud_feign" options="-parameters" />
+      <module name="springcloud_feign_backstage" options="-parameters" />
+      <module name="springcloud_feign_business" options="-parameters" />
+      <module name="springcloud_producer" options="-parameters" />
+      <module name="springcloud_zuul" options="-parameters" />
+    </option>
+  </component>
+</project>
